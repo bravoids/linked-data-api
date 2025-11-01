@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto Linked Data - Héctor Bravo</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <header class="bg-indigo-600 text-white py-6 shadow-lg">
+    <h1 class="text-3xl font-bold text-center">🔗 Proyecto Linked Data</h1>
+    <p class="text-center text-indigo-100 mt-2">Análisis de patrones de comportamiento con K-Means</p>
+  </header>
+
+  <main class="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-xl shadow-lg">
+    <section class="text-center mb-8">
+      <h2 class="text-2xl font-semibold mb-2">📊 Resultados del Análisis</h2>
+      <p>Este proyecto agrupa datos del conjunto <b>ISOFV163_A8_Anexo.csv</b> mediante <b>K-Means</b> para detectar patrones de comportamiento.</p>
+    </section>
+
+    <section class="flex justify-center mb-8">
+      <img src="/static/clusters.png" alt="Gráfico de clusters" class="rounded-lg shadow-md w-full md:w-2/3">
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
+      <div class="p-4 bg-indigo-50 rounded-lg hover:shadow-md transition">
+        <h3 class="text-lg font-semibold">📁 Dataset procesado</h3>
+        <p class="text-gray-600 mt-2">El archivo <b>dataset_procesado.csv</b> contiene los datos numéricos listos para análisis.</p>
+      </div>
+
+      <div class="p-4 bg-indigo-50 rounded-lg hover:shadow-md transition">
+        <h3 class="text-lg font-semibold">🧠 Clusters detectados</h3>
+        <p class="text-gray-600 mt-2">Los registros fueron agrupados según su similitud usando <b>K-Means</b>.</p>
+      </div>
+
+      <div class="p-4 bg-indigo-50 rounded-lg hover:shadow-md transition">
+        <h3 class="text-lg font-semibold">🌐 API disponible</h3>
+        <p class="text-gray-600 mt-2">Explora los resultados en formato JSON:<br>
+          <a href="/api/info" class="text-indigo-600 underline hover:text-indigo-800">/api/info</a>
+        </p>
+      </div>
+
+      <div class="p-4 bg-indigo-50 rounded-lg hover:shadow-md transition">
+        <h3 class="text-lg font-semibold">🔍 Ejemplo por cluster</h3>
+        <p class="text-gray-600 mt-2">Ver ejemplos del <b>Cluster 1</b>:<br>
+          <a href="/api/cluster/1" class="text-indigo-600 underline hover:text-indigo-800">/api/cluster/1</a>
+        </p>
+      </div>
+    </section>
+
+    <footer class="mt-10 text-center text-gray-500 text-sm">
+      © 2025 Proyecto Linked Data | Desarrollado por <b>Héctor Bravo</b>
+    </footer>
+  </main>
+
+</body>
+</html>
