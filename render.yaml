@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: linked-data-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn api_linked_data:app --bind 0.0.0.0:$PORT
+    plan: free
+    branch: main
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3
