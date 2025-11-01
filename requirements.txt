@@ -1,5 +1,6 @@
-fastapi
-uvicorn
-pandas
-scikit-learn
-matplotlib
+Flask==3.0.3
+pandas==2.2.3
+numpy==1.26.4
+matplotlib==3.9.2
+scikit-learn==1.5.1
+azure-storage-blob==12.19.0
