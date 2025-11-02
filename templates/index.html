@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -16,7 +16,15 @@
   <main class="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-xl shadow-lg">
     <section class="text-center mb-8">
       <h2 class="text-2xl font-semibold mb-2">📊 Resultados del Análisis</h2>
-      <p>Este proyecto agrupa datos del conjunto <b>ISOFV163_A8_Anexo.csv</b> mediante <b>K-Means</b> para detectar patrones de comportamiento.</p>
+      <p>
+        Este proyecto agrupa datos del conjunto 
+        <b>ISOFV163_A8_Anexo.csv</b> mediante <b>K-Means</b> para detectar patrones de comportamiento.<br>
+        👉 
+        <a href="/ver_csv/ISOFV163_A8_Anexo" 
+           class="text-indigo-600 underline hover:text-indigo-800">
+           Ver ISOFV163_A8_Anexo.csv
+        </a>
+      </p>
     </section>
 
     <section class="flex justify-center mb-8">
@@ -26,7 +34,14 @@
     <section class="grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
       <div class="p-4 bg-indigo-50 rounded-lg hover:shadow-md transition">
         <h3 class="text-lg font-semibold">📁 Dataset procesado</h3>
-        <p class="text-gray-600 mt-2">El archivo <b>dataset_procesado.csv</b> contiene los datos numéricos listos para análisis.</p>
+        <p class="text-gray-600 mt-2">
+          El archivo <b>dataset_procesado.csv</b> contiene los datos numéricos listos para análisis.<br>
+          👉 
+          <a href="/ver_csv/dataset_procesado" 
+             class="text-indigo-600 underline hover:text-indigo-800">
+             Ver dataset_procesado.csv
+          </a>
+        </p>
       </div>
 
       <div class="p-4 bg-indigo-50 rounded-lg hover:shadow-md transition">
@@ -43,8 +58,11 @@
 
       <div class="p-4 bg-indigo-50 rounded-lg hover:shadow-md transition">
         <h3 class="text-lg font-semibold">🔍 Ejemplo por cluster</h3>
-        <p class="text-gray-600 mt-2">Ver ejemplos del <b>Cluster 1</b>:<br>
-          <a href="/api/cluster/1" class="text-indigo-600 underline hover:text-indigo-800">/api/cluster/1</a>
+        <p class="text-gray-600 mt-2">
+          Ver ejemplos de los Clusters:<br>
+          <a href="/api/cluster/0" class="text-indigo-600 underline hover:text-indigo-800">Cluster 0</a> |
+          <a href="/api/cluster/1" class="text-indigo-600 underline hover:text-indigo-800">Cluster 1</a> |
+          <a href="/api/cluster/2" class="text-indigo-600 underline hover:text-indigo-800">Cluster 2</a>
         </p>
       </div>
     </section>

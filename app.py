@@ -61,6 +61,20 @@ def get_cluster(id):
     return jsonify({"cluster": id, "ejemplos": subset})
 
 # ==============================
+#  RUTA PARA VISUALIZAR DATASETS
+# ==============================
+@app.route('/ver_csv/<nombre>')
+def ver_csv(nombre):
+    if nombre == "dataset_procesado":
+        df = pd.read_csv("dataset_procesado.csv")
+    elif nombre == "ISOFV163_A8_Anexo":
+        df = pd.read_csv("ISOFV163_A8_Anexo.csv")
+    else:
+        return "Archivo no encontrado", 404
+
+    return df.to_html(classes='table table-striped', index=False)
+
+# ==============================
 #  EJECUCIÓN LOCAL O EN RENDER
 # ==============================
 if __name__ == '__main__':
